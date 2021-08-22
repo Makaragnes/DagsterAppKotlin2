@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imgtree"
+    tools:context=".auth.RegisterActivity">
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:id="@+id/imageIcon"
+        android:src="@drawable/img_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/loginField">
+    </ImageView>
+
+    <EditText
+        android:hint="pass you email"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginField"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </EditText>
+
+    <EditText
+        android:hint="pass you password"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordField"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/loginField"
+        android:layout_margin="64dp">
+    </EditText>
+
+    <EditText
+        android:hint="pass you company name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/compainField"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/passwordField"
+        android:layout_margin="64dp">
+    </EditText>
+
+    <Button
+        android:text="Sign up"
+        android:elevation="12dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/compainField"
+        android:layout_margin="64dp">
+    </Button>
+
+    <Button
+        android:text="Sign in"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/signIn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/signUp"
+        android:layout_margin="64dp">
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
